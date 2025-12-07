@@ -49987,7 +49987,7 @@ local function NewModifiableDump(dump: DumpedClass, inst: Instance): ModifiableD
 		ModifiableDump.Inst[prop] = newValue
 	end
 	ModifiableDump.DumpMember = function(prop: string): DumpedMember
-		for _, member in pairs(ModifiableDump.Dump["Members"]) do
+		for _, member in pairs(ModifiableDump.GetAllMembers()) do
 			if member.Name == prop then
 				return member
 			end
