@@ -34,3 +34,7 @@ jobs:
         run: |
           cd updater
           cargo run -r ../src/Reflect.lua
+          cd ..
+          git add src/Reflect.lua
+          git commit -m "Autoupdate Reflect.lua"
+          git push
