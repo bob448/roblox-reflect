@@ -2,7 +2,7 @@
 ## This was made with [dump-roblox-api](https://github.com/bob448/dump-roblox-api)
 
 ## How to setup:
-Copy and paste Reflect.lua into a ModuleScript.
+Copy and paste Reflect.lua into a ModuleScript
 You should preferably name it "Reflect" or something similar.
 
 ![Creation example](assets/creation.gif)
