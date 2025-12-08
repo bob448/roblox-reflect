@@ -50010,4 +50010,12 @@ function reflect:GetModifiableDump(inst: Instance): ModifiableDump
 	return NewModifiableDump(DumpedClass, inst)
 end
 
+function reflect:GetAllClassNames(): {string}
+	local Names = {}
+	for className, _ in pairs(Classes) do
+		table.insert(Names, className)
+	end
+	return Names
+end
+
 return reflect
