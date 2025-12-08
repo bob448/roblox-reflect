@@ -49960,6 +49960,8 @@ type ModifiableDump = {
 
 local reflect = {}
 
+reflect.DumpedClasses = Classes
+
 -- Gets the DumpedClass for the Instance
 function reflect:DumpInstance(inst: Instance): DumpedClass
 	return Classes[inst.ClassName]
@@ -50008,6 +50010,10 @@ end
 function reflect:GetModifiableDump(inst: Instance): ModifiableDump
 	local DumpedClass = reflect:DumpInstance(inst)
 	return NewModifiableDump(DumpedClass, inst)
+end
+
+function reflect:GetClass(name: string): DumpedClass?
+	return Classes[name]
 end
 
 function reflect:GetAllClassNames(): {string}
