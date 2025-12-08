@@ -424,3 +424,13 @@ local reflect = loadstring(game:HttpGet("https://raw.githubusercontent.com/bob44
   			- Name: bool
   			- Category: Primitive
 ```
+# Corruption:
+With the reflection library, you can make things like this.
+This corrupts the game in real-time, changing random properties
+and creating random children.
+
+Video:
+[Corruption Video](assets/corruption.mp4)
+
+Script:
+[CorruptionScript](examples/Corruption/CorruptionScript.lua)
