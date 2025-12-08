@@ -16,6 +16,13 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local reflect = require(ReplicatedStorage:WaitForChild("Reflect"))
 ```
 
+# Flattened version:
+I am not responsible for any exploiter's actions when using this code.
+
+```lua
+local reflect = loadstring(game:HttpGet("https://raw.githubusercontent.com/bob448/roblox-reflect/main/src/Reflect.lua"))()
+```
+
 # Examples:
 ## [ReplicatedStorage-info.lua](examples/ReplicatedStorage-info.lua)
 ```
