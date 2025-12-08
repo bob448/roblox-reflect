@@ -3,9 +3,18 @@
 
 ## How to setup:
 Copy and paste Reflect.lua into a ModuleScript.
-You should preferably name it "Reflect" or something similar.
+You should preferably name it "Reflect" or something similar,
+and you should put it into `ReplicatedStorage`
 
 ![Creation example](assets/creation.gif)
+
+Then, you can use `require()` to load it into a `Script` or `LocalScript`:
+
+```lua
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local reflect = require(ReplicatedStorage:WaitForChild("Reflect"))
+```
 
 # Examples:
 ## [ReplicatedStorage-info.lua](examples/ReplicatedStorage-info.lua)
