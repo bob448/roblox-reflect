@@ -1,8 +1,6 @@
 local RunService = game:GetService("RunService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local ProtectorScript = script:WaitForChild("P")
-
 local reflect = require(ReplicatedStorage:WaitForChild("Reflect"))
 
 local Rand = Random.new()
@@ -253,15 +251,6 @@ local function StartCorruption()
 		task.wait(10)
 	end
 end
-
-ProtectorScript:GetPropertyChangedSignal("Enabled"):Connect(function()
-	task.wait(.1)
-	ProtectorScript.Enabled = true
-end)
-
-ProtectorScript.Destroying:Connect(function()
-	StartCorruption()
-end)
 
 ConstantChangeToRandomName(script)
 ConstantRandomChildren(script, 1000)
